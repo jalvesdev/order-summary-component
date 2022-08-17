@@ -1,3 +1,16 @@
+:root {
+  --primary-pale: hsl(225, 100%, 94%);
+  --primary-bright:  hsl(245, 75%, 52%);
+
+  --neutral-very-pale: hsl(225, 100%, 98%);
+  --neutral-desaturate: hsl(224, 23%, 55%);
+  --neutral-dark: hsl(223, 47%, 23%);
+
+  --neutral-hover: hsl(245, 83%, 68%);
+
+  --fm-atributtion: hsl(228, 45%, 44%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +23,9 @@ body {
 }
 
 body {
-  background-color: hsl(225, 100%, 94%);
+  background-color: var(--primary-pale);
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
-  background-size: auto;
   background-position: top center;
   max-width: 1440px;
   min-height: 800px;
@@ -28,7 +40,6 @@ body {
     max-width: 350px;
   }
 
-
   .container img {
     max-width: 100%;
   }
@@ -40,18 +51,18 @@ body {
 
 .container {
   width: 450px;
-  background-color: hsl(225, 100%, 98%);
+  background-color: var(--neutral-very-pale);
   overflow: hidden;
   border-radius: 20px;
   margin: 80px auto;
   text-align: center;
   padding-bottom: 50px;
-  box-shadow: 0 20px 20px hsl(225, 100%, 94%);
+  box-shadow: 0 20px 20px var(--primary-pale);
 }
 
 .container h1 {
   font-weight: 900;
-  color: hsl(223, 47%, 23%);
+  color: var(--neutral-dark);
   text-align: center;
   padding-top: 50px;
 }
@@ -59,7 +70,7 @@ body {
 .container p {
   max-width: 360px;
   margin: 20px auto;
-  color:hsl(224, 23%, 55%);
+  color: var(--neutral-desaturate);
   text-align: center;
   line-height: 1.5em;
 }
@@ -76,12 +87,12 @@ body {
 
 .details .title {
   font-weight: 700;
-  color:hsl(223, 47%, 23%)
+  color: var(--neutral-dark)
    
 } 
 
 .details .price {
-  color:hsl(224, 23%, 55%);
+  color: var(--neutral-desaturate);
   
 }
 
@@ -92,33 +103,30 @@ body {
 }
 
 .details a:visited {
-  color: hsl(245, 75%, 52%);
+  color: var(--primary-bright);
 }
 
 .details a:hover {
-  color: hsl(245, 83%, 68%);
+  color: var(--neutral-hover);
   text-decoration: none;
 }
 
-
-
 .container button {
-  display: block;
   margin: 30px auto;
   height: 60px;
   width:80%;
-  background-color: hsl(245, 75%, 52%);
-  color:hsl(225, 100%, 98%);
+  background-color: var(--primary-bright);
+  color:var(--neutral-very-pale);
   font-size: 16px;
   font-weight: 800;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 20px 20px hsl(225, 100%, 94%);
+  box-shadow: 0 20px 20px var(--primary-pale);
   
 }
 
 .container button:hover {
-  background-color: hsl(245, 83%, 68%);
+  background-color: var(--neutral-hover);
   cursor: pointer;
 }
 
@@ -128,16 +136,16 @@ body {
 }
 
 .container .details-footer a:visited {
-  color: hsl(224, 23%, 55%); 
+  color: var(--neutral-desaturate); 
 }
 
 .container .details-footer a:hover {
-  color: hsl(223, 47%, 23%);
+  color: var(--neutral-dark);
 }
 
 .attribution { 
   font-size: 11px; text-align: center; 
 }
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: var(--fm-atributtion); 
 }
