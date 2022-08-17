@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  max-height: 100%;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
+  max-width: 1440px;
+  min-height: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  body {
+      background-image: url("../images/pattern-background-mobile.svg");
+  }
+  .container {
+    max-width: 350px;
+  }
+
+
+  .container img {
+    max-width: 100%;
+  }
+}
+
+  body p {
+  font-size: 16px;
+}
+
+.container {
+  width: 450px;
+  background-color: hsl(225, 100%, 98%);
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 80px auto;
+  text-align: center;
+  padding-bottom: 50px;
+  box-shadow: 0 20px 20px hsl(225, 100%, 94%);
+}
+
+.container h1 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container p {
+  max-width: 360px;
+  margin: 20px auto;
+  color:hsl(224, 23%, 55%);
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.container .details {
+  height: 48px;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.details .title {
+  font-weight: 700;
+  color:hsl(223, 47%, 23%)
+   
+} 
+
+.details .price {
+  color:hsl(224, 23%, 55%);
+  
+}
+
+.details a {
+  align-items: left;
+  padding-left: 80px;
+  font-weight: 700;
+}
+
+.details a:visited {
+  color: hsl(245, 75%, 52%);
+}
+
+.details a:hover {
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+
+
+
+.container button {
+  display: block;
+  margin: 30px auto;
+  height: 60px;
+  width:80%;
+  background-color: hsl(245, 75%, 52%);
+  color:hsl(225, 100%, 98%);
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px hsl(225, 100%, 94%);
+  
+}
+
+.container button:hover {
+  background-color: hsl(245, 83%, 68%);
+  cursor: pointer;
+}
+
+.container .details-footer a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.container .details-footer a:visited {
+  color: hsl(224, 23%, 55%); 
+}
+
+.container .details-footer a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
