@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/jalvesdev/order-summary-component)
-- Live Site URL: [](https://order-summary-component-gamma-nine.vercel.app/)
+- Solution URL: [github](https://github.com/jalvesdev/order-summary-component)
+- Live Site URL: [vercel](https://order-summary-component-gamma-nine.vercel.app/)
 
 ## My process
 
